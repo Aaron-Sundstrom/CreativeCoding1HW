@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title> Aaron's Website</title>
+
+        <style>
+            .mainContainer {
+                margin: 50px;
+			    background-color: #a1b5a1;
+			    border: 5px outset black;
+			    border-radius: 25px;
+			    text-align: center;
+            }
+            h1 {
+			text-align: center;
+			text-transform: uppercase;
+			border-bottom: 1px solid black;
+		    }
+		    ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: black;
+		    }
+            li{
+                float: left;
+            }
+            li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+            .active {
+                background-color: white;
+                color:black;
+            }
+            body {
+                background-color: #153b15;
+                margin: 0 10%;
+                font-family: sans-serif;
+            }
+            img.staff{
+			width:300px;
+			height:200px;
+		}
+
+            .threeContainer {
+    		    display: flex;
+    		    
+            }
+
+            .containerchild1 {
+                border-radius: 25px;
+                height: auto;
+                width: 33%;
+                float: left;
+                padding: 20px;
+                border: 5px solid black;
+                background-color: white;
+            }
+            .containerchild2 {
+                border-radius: 25px;
+                height: auto;
+                width: 33%;
+                padding: 20px;
+                border: 5px solid black;
+                margin-left: 50px;
+                background-color: white;
+            }
+            
+            .containerchild3 {
+                border-radius: 25px;
+                height: auto;
+                width: 33%;
+                padding: 20px;
+                border: 5px solid black;
+                margin-left: 50px;
+                background-color: white;
+            }   
+
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="formpage.html">Form Page</a></li>
+            <li><a class = "active" href="currentlyplaying.html">Currently Playing</a></li>
+        </ul>
+        <div class = "mainContainer">
+            <h1>Welcome to my currently playing section!</h1>
+            <br>
+            <br>
+            Here is a quick summation of what I am playing and my current thoughts on it! I hope you enjoy!
+            <br>
+            <br>
+
+            <div class ="threeContainer">
+
+                <div class = "containerchild1">
+                    <img class = "staff" src= "eldenring.jpg" alt = "image of elden ring">
+                    <h3> Elden Ring</h3>
+                    <p> 
+                        I have been running back through Elden Ring with a new character as they just announced the new DLC which got me very excited. Easily one of my top favorite
+                        games of all time. 
+                    </p>  
+                </div>
+    
+    
+    
+                <div class = "containerchild2">
+                    <img class = "staff" src= "granblue.jpeg" alt = "image of granbluefantasy">
+                    <h3> Granblue Fantasy: Relink</h3>
+                    <p>
+                        My most recent obsession. I picked this up when it released having never played a Granblue game before and I have been in love with it since.
+                        Its cleverly disguised as a pseudo-mmo. 
+                    </p>
+                </div>
+    
+    
+    
+                <div class = "containerchild3">
+                    <img class = "staff" src= "yugioh.jpeg" alt = "image of yugioh duel masters">
+                    <h3> YuGiOh! Duel Masters</h3>
+                    <p>
+                        Oh boy, I have been playing this with my friends back home and it is a nostalgic and often frustrating trip down memory lane. I 
+                        Highly Highly recommend as it is free! The UI leaves a lot to be desired but once you are in a duel its perfect. 
+                    </p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
