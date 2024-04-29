@@ -1,0 +1,22 @@
+Organizing Thoughts on how this will work. 
+
+Essentially what we are testing is some stuff to submit for the final project proposal.
+
+Final goal will be to import pixelart assets onto this page to make a sidescrolling 2d with
+multiple screens, collectables, and a boss???? maybe a boss but I would like to have an upgradable weapon maybe required to beat the boss (if there is a boss). also will be needing to figure out collision in way that is substantial and perhaps gravity for jumping. Sprinting I got on lock from my legally distinct video game I made prior.
+
+Multiple screens idea. Current working idea is a draw scene function that calls the stored scenes by number and draws them, a ticker will going up if leaving the left screen and down if leaving right. 
+
+*** SOME RANDOM THOUGHTS BELOW ****
+
+ would i need the same amount of enemies in the scene? or the same amount of platforms? how to move stuff around from scene to scene if the amount of things and placement need to change? 
+
+If i have a function to create and store enemy info, I COULD just call that in the draw scene and have them move and stuff in the enemy function as a behavior thing.
+
+*** END OF RANDOM THOUGHTS ***
+
+So this works, we now know we can draw different scenes depending on a given variable we can manipulate. Lets have everything inside the scene handled independently other than collection of pieces of the collectables, those will be tracked seperately? 
+ 
+Could have a function that determines if teh player has left the screen, then record the location of the player as an array and return it to the next scene for drawing it. 
+
+We could have an enemy function that has hitbox and draw info on it, then we could feed that into the scene draw, that way enemy info is recored outside of the drawing functions. Could have different flags that could be done from that. Lets try that.
