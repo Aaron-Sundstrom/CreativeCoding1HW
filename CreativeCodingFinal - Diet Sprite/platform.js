@@ -16,8 +16,8 @@ class Platform {
   
   buildPlat(){
     rectMode(CENTER);
-    noFill();
-    noStroke();
+    fill('gray');
+    //noStroke();
     rect(this.xpos,this.ypos,this.l,this.w)
   }
   

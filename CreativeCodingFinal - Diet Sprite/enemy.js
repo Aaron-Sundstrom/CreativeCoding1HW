@@ -31,8 +31,8 @@ class Enemy{
     //hitbox stuff
     if (this.dead == false){
       rectMode(CENTER);
-      noFill();
-      noStroke();
+      fill("red");
+      //noStroke();
       square(this.xpos,this.ypos + 25,50);
     }else{
       

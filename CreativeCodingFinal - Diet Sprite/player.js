@@ -22,8 +22,8 @@ class Player {
   
   //draws the player
   drawPlayer(){
-    noFill();
-    noStroke();
+    fill('blue');
+    //noStroke();
     circle(this.xpos, this.ypos, 50);
   }
   

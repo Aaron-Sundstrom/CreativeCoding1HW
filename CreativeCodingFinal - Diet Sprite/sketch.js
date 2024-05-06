@@ -1,41 +1,41 @@
 //Preloading images (some may not work due to p5.js bug)
 
-function preload(){
-  enemy1 = loadImage('assets/Enemy.png');
-  enemy2 = loadImage('assets/Enemy.png');
-  enemy3 = loadImage('assets/Enemy.png');
-  enemy4 = loadImage('assets/Enemy.png');
-  enemy5 = loadImage('assets/Enemy.png');
+//function preload(){
+  //enemy1 = loadImage('assets/Enemy.png');
+  //enemy2 = loadImage('assets/Enemy.png');
+  //enemy3 = loadImage('assets/Enemy.png');
+  //enemy4 = loadImage('assets/Enemy.png');
+  //enemy5 = loadImage('assets/Enemy.png');
   
-  playerimg = loadImage('assets/pc.png');
+  //playerimg = loadImage('assets/pc.png');
   
   //grass plats TYPE 0
-  floor1g = loadImage('assets/plat1.png');
-  plat1g = loadImage('assets/plat1.png');
-  plat2g = loadImage('assets/plat1.png');
-  plat3g = loadImage('assets/plat1.png');
-  plat4g= loadImage('assets/plat1.png');
-  plat5g = loadImage('assets/plat1.png');
+  //floor1g = loadImage('assets/plat1.png');
+  //plat1g = loadImage('assets/plat1.png');
+  //plat2g = loadImage('assets/plat1.png');
+  //plat3g = loadImage('assets/plat1.png');
+  //plat4g= loadImage('assets/plat1.png');
+  //plat5g = loadImage('assets/plat1.png');
   
   //stone plats TYPE 1
-  floor1s = loadImage('assets/plat2.png');
-  plat1s = loadImage('assets/plat2.png');
-  plat2s = loadImage('assets/plat2.png');
-  plat3s = loadImage('assets/plat2.png');
-  plat4s= loadImage('assets/plat2.png');
-  plat5s = loadImage('assets/plat2.png');
+  //floor1s = loadImage('assets/plat2.png');
+  //plat1s = loadImage('assets/plat2.png');
+  //plat2s = loadImage('assets/plat2.png');
+  //plat3s = loadImage('assets/plat2.png');
+  //plat4s= loadImage('assets/plat2.png');
+  //plat5s = loadImage('assets/plat2.png');
   
   //brick plats TYPE 2
-  floor1b = loadImage('assets/plat3.png');
-  plat1b = loadImage('assets/plat3.png');
-  plat2b = loadImage('assets/plat3.png');
-  plat3b = loadImage('assets/plat3.png');
-  plat4b= loadImage('assets/plat3.png');
-  plat5b = loadImage('assets/plat3.png');
+  //floor1b = loadImage('assets/plat3.png');
+  //plat1b = loadImage('assets/plat3.png');
+  //plat2b = loadImage('assets/plat3.png');
+  //plat3b = loadImage('assets/plat3.png');
+  //plat4b= loadImage('assets/plat3.png');
+  //plat5b = loadImage('assets/plat3.png');
   
   //Relic load
-  rel = loadImage('assets/relic.png');
-}
+  //rel = loadImage('assets/relic.png');
+//}
 
 
 //gamestate tracking
@@ -101,30 +101,30 @@ function winCheck(){
 //draw the scene we are on and assigning sprites 
 function callScene (scene){
   sceneHolder[scene].drawScene();
-  if (sceneHolder[scene].type == 0){//if its grass type
-    image(floor1g,500,850,1000,50)
-    image(plat1g,200,650);
-    image(plat2g,800,650);
-    image(plat3g,500,450);
-    image(plat4g,200,250);
-    image(plat5g,800,250);
-  }
-  if (sceneHolder[scene].type == 1){//if its stone type
-    image(floor1s,500,850,1000,50)
-    image(plat1s,200,650);
-    image(plat2s,800,650);
-    image(plat3s,500,450);
-    image(plat4s,200,250);
-    image(plat5s,800,250);
-  }
-  if (sceneHolder[scene].type == 2){//if its stone type
-    image(floor1b,500,850,1000,50)
-    image(plat1b,200,650);
-    image(plat2b,800,650);
-    image(plat3b,500,450);
-    image(plat4b,200,250);
-    image(plat5b,800,250);
-  }
+  //if (sceneHolder[scene].type == 0){//if its grass type
+    //image(floor1g,500,850,1000,50)
+    //image(plat1g,200,650);
+    //image(plat2g,800,650);
+    //image(plat3g,500,450);
+    //image(plat4g,200,250);
+    //image(plat5g,800,250);
+  //}
+  //if (sceneHolder[scene].type == 1){//if its stone type
+    //image(floor1s,500,850,1000,50)
+    //image(plat1s,200,650);
+    //image(plat2s,800,650);
+    //image(plat3s,500,450);
+    //image(plat4s,200,250);
+    //image(plat5s,800,250);
+  //}
+  //if (sceneHolder[scene].type == 2){//if its stone type
+    //image(floor1b,500,850,1000,50)
+    //image(plat1b,200,650);
+    //image(plat2b,800,650);
+    //image(plat3b,500,450);
+    //image(plat4b,200,250);
+    //image(plat5b,800,250);
+  //}
 }
 
 
@@ -181,7 +181,7 @@ function gravity(){
 
 function setup() {
   createCanvas(1000, 1000);
-  imageMode(CENTER);
+  //imageMode(CENTER);
   
 }
 
@@ -284,7 +284,8 @@ function colSpawnCheck(){
     if(sceneHolder[current_Scene].colstat == false){
       colx = 500;
     }
-    image(rel,colx,coly,50,50);
+    //image(rel,colx,coly,50,50);
+    circle(colx,coly,50);
     if ( pc.xpos <= 515 && pc.xpos >= 475 && pc.ypos <= 420 && pc.ypos >= 400){
       colx = 2000;
       sceneHolder[current_Scene].colstat = true;
@@ -394,36 +395,36 @@ function draw() {
     //player stuff and sprite
     pc.drawPlayer();
     playerMovement();
-    image(playerimg,pc.xpos,pc.ypos,50,50);
+    //image(playerimg,pc.xpos,pc.ypos,50,50);
     gravity();
     edgeCheck();
     
     
     //enemy stuff AKA sprites dont work how i thought
     en1.drawEnemy();
-    if (en1.dead == false){
-      image(enemy1,en1.xpos,en1.ypos+30,50,50);
-    }
+    //if (en1.dead == false){
+      //image(enemy1,en1.xpos,en1.ypos+30,50,50);
+    //}
     en1.enemyMovement();
     en2.drawEnemy();
-    if (en2.dead == false){
-      image(enemy2,en2.xpos,en2.ypos+30,50,50);
-    }
+    //if (en2.dead == false){
+      //image(enemy2,en2.xpos,en2.ypos+30,50,50);
+    //}
     en2.enemyMovement();
     en3.drawEnemy();
-    if (en3.dead == false){
-      image(enemy3,en3.xpos,en3.ypos+30,50,50);
-    }
+    //if (en3.dead == false){
+      //image(enemy3,en3.xpos,en3.ypos+30,50,50);
+    //}
     en3.enemyMovement();
     en4.drawEnemy();
-    if (en4.dead == false){
-      image(enemy4,en4.xpos,en4.ypos+30,50,50);
-    }
+    //if (en4.dead == false){
+      //image(enemy4,en4.xpos,en4.ypos+30,50,50);
+    //}
     en4.enemyMovement();
     en5.drawEnemy();
-    if (en5.dead == false){
-      image(enemy5,en5.xpos,en5.ypos+30,50,50);
-    }
+    //if (en5.dead == false){
+      //image(enemy5,en5.xpos,en5.ypos+30,50,50);
+    //}
     en5.enemyMovement();
     //absolutely needs to be here for some reason everything breaks if its not here. 
     colSpawnCheck();
